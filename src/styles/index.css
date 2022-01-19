@@ -1,0 +1,88 @@
+html{
+  height: 100vh;
+}
+body{
+  position: relative;
+  padding: 0%;
+  margin: 0;
+  height: 100%
+}
+main {
+  position: absolute;
+  width: 800px;
+  height: 500px;
+  border: 1px solid black;
+  top: 50%;
+  margin-top: -250px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* transform: translateY(50%); */
+}
+
+#floating-controls {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+
+.slider-btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+}
+
+.slider-btn-img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-img{
+  display: inline;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 40;
+  float:right;
+}
+
+#prev-slide-btn{
+  left: 25px;
+  transform: rotate(180deg);
+}
+
+#next-slide-btn{
+  right: 25px;
+}
+
+#slider-dots-con{
+  position: absolute;
+  display: flex;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: 25px;
+}
+
+.slider-dots{
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border: 5px solid #4abd96;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.slider-dots:not(.last-dot) {
+  margin-right: 8px;
+}
+.inner-radio{
+  position: absolute;
+  width: 50%;
+  height:50%;
+  border-radius: 50%;
+  left: 25%;
+  top: 25%;
+  background-color: #4abd96;
+}
